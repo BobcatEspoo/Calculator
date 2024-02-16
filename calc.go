@@ -92,6 +92,9 @@ func main() {
 		}
 		if roman == false {
 			in := strings.Contains(text, "+")
+			if strings.Count(text, "+") > 1 {
+				panic(fmt.Sprintf("Введите корректно"))
+			}
 			if in == true {
 				a := strings.SplitN(text, "+", -2) // массив
 				toNumber0, _ := strconv.Atoi(a[0])
@@ -106,6 +109,9 @@ func main() {
 				fmt.Println(rez)
 			}
 			in = strings.Contains(text, "-")
+			if strings.Count(text, "-") > 1 {
+				panic(fmt.Sprintf("Введите корректно"))
+			}
 			if in == true {
 				a := strings.SplitN(text, "-", -2) // массив
 				toNumber0, _ := strconv.Atoi(a[0])
@@ -120,6 +126,9 @@ func main() {
 				fmt.Println(rez)
 			}
 			in = strings.Contains(text, "*")
+			if strings.Count(text, "*") > 1 {
+				panic(fmt.Sprintf("Введите корректно"))
+			}
 			if in == true {
 				a := strings.SplitN(text, "*", -2) // массив
 				toNumber0, _ := strconv.Atoi(a[0])
@@ -134,6 +143,9 @@ func main() {
 				fmt.Println(rez)
 			}
 			in = strings.Contains(text, "/")
+			if strings.Count(text, "/") > 1 {
+				panic(fmt.Sprintf("Введите корректно"))
+			}
 			if in == true {
 				a := strings.SplitN(text, "/", -2) // массив
 				toNumber0, _ := strconv.Atoi(a[0])
@@ -150,6 +162,9 @@ func main() {
 
 		} else {
 			in := strings.Contains(text, "+")
+			if strings.Count(text, "+") > 1 {
+				panic(fmt.Sprintf("Введите корректно"))
+			}
 			if in == true {
 				a := strings.SplitN(text, "+", -2) // массив
 				if strings.Contains(text, "0") {
@@ -163,6 +178,9 @@ func main() {
 
 			}
 			in = strings.Contains(text, "-")
+			if strings.Count(text, "-") > 1 {
+				panic(fmt.Sprintf("Введите корректно"))
+			}
 			if in == true {
 				a := strings.SplitN(text, "-", -2) // массив
 				if strings.Contains(text, "0") {
@@ -180,6 +198,9 @@ func main() {
 			}
 
 			in = strings.Contains(text, "*")
+			if strings.Count(text, "*") > 1 {
+				panic(fmt.Sprintf("Введите корректно"))
+			}
 			if in == true {
 				a := strings.SplitN(text, "*", -2) // массив
 				if strings.Contains(text, "0") {
@@ -194,6 +215,9 @@ func main() {
 			}
 
 			in = strings.Contains(text, "/")
+			if strings.Count(text, "/") > 1 {
+				panic(fmt.Sprintf("Введите корректно"))
+			}
 			if in == true {
 				a := strings.SplitN(text, "/", -2) // массив
 				if strings.Contains(text, "0") {
